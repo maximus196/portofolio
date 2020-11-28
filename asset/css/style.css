@@ -1,6 +1,7 @@
 body{
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 
 }
 
@@ -9,10 +10,30 @@ body{
     height: 20px;
     background-color: orangered;
 }
+main{
+    width: 100%;
+    height: auto;
+}
 
 /* ***************************************nav menu*************************************** */
 
 /* ******************************************************** Header*************************************************** */
+header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+header h1{
+    margin-left: 30vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.644);
+    color: #fff;
+    width: 40vw;
+    position: absolute;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
 
 /* ********************************************************a propos     *************************************************** */
 article{
@@ -223,7 +244,7 @@ article{
     position: absolute;
     top: calc(100% + 10px);
     left: 0;
-    width: 100%;
+    width: 160%;
     height: 15px;
     background: #c0c0c0;
     border-radius: 100px;
@@ -250,7 +271,7 @@ article{
 
 @keyframes html {
     to {
-        width: 65%;
+        width: 110%;
     }
 }
 
@@ -260,7 +281,7 @@ article{
 
 @keyframes css {
     to {
-        width: 55%;
+        width: 90%;
     }
 }
 
@@ -270,7 +291,7 @@ article{
 
 @keyframes js {
     to {
-        width: 20%;
+        width: 50%;
     }
 }
 
@@ -280,7 +301,7 @@ article{
 
 @keyframes mkt {
     to {
-        width: 80%;
+        width: 130%
     }
        
 }
@@ -290,7 +311,7 @@ article{
 
 @keyframes base-donne {
     to {
-        width: 65%;
+        width: 85%;
     }
 }
 .bar#perso-cms:after {
@@ -308,7 +329,7 @@ article{
 
 @keyframes back-off {
     to {
-        width: 5%;
+        width: 80%;
     }
 }
 .bar#pro-serveur:after {
@@ -317,9 +338,15 @@ article{
 
 @keyframes pro-serveur {
     to {
-        width: 40%;
+        width: 100%;
     }
 }
+@keyframes marketing {
+    to {
+        width: 100%;
+    }
+}
+
 .bar-progression:hover .bar {
     opacity: 20%;
 }

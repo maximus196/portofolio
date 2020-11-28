@@ -6,6 +6,8 @@
     .article{
         height: 100vh;
         margin-bottom: 100vh;
+        display: flex;
+        flex-direction: column;
     }
     .passion{
         width: 80%;
